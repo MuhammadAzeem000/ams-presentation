@@ -191,6 +191,10 @@ window.onload = function () {
         tile.addEventListener("drop", dragDrop);       //drop an image onto another one
         tile.addEventListener("dragend", dragEnd);      //after you completed dragDrop
 
+        tile.addEventListener("touchstart", dragStart);
+        tile.addEventListener("touchmove", touchMove);
+        tile.addEventListener("touchend", dragEnd);
+
         document.getElementById("board").append(tile);
     }
 
@@ -213,7 +217,29 @@ window.onload = function () {
         tile.addEventListener("drop", dragDrop);       //drop an image onto another one
         tile.addEventListener("dragend", dragEnd);      //after you completed dragDrop
 
+        tile.addEventListener("touchstart", dragStart);
+        tile.addEventListener("touchmove", touchMove);
+        tile.addEventListener("touchend", dragEnd);
+
         document.getElementById("pieces").append(tile);
+    }
+    
+    function touchMove(event) {
+        // Prevent default touch behavior to avoid interference
+        event.preventDefault();
+
+        // Get the touch coordinates
+        var touch = event.touches[0];
+        var x = touch.clientX;
+        var y = touch.clientY;
+
+        // Get the element below the touch point
+        var elementBelow = document.elementFromPoint(x, y);
+
+        // Now you have the element below the touch point, you can perform any necessary logic
+        // For example, you might want to highlight or apply styles to the element
+
+        otherTile = elementBelow; //this refers to image that is being dropped on
     }
 
     //DRAG TILES
