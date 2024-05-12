@@ -217,6 +217,9 @@ window.onload = function () {
     //DRAG TILES
     function dragStart() {
         currTile = this; //this refers to image that was clicked on for dragging
+        if (currTile.src.includes("blank")) {
+            return;
+        }
         ItemName.innerText = currTile.getAttribute("data-name");
         ItemNumber.innerText = currTile.getAttribute("data-number");
         ItemWeight.innerText = currTile.getAttribute("data-weight");
@@ -256,7 +259,10 @@ window.onload = function () {
         let otherImg = otherTile.src;
         currTile.src = otherImg;
         otherTile.src = currImg;
-        
         AudioDrop.play();
+
+        if(data.every(o => o.is_drop === true)) {
+            reveal.next();
+        }
     }
 }
