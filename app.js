@@ -123,6 +123,8 @@ window.onload = function () {
 
     const AudioDrop = document.querySelector('#drop-audio');
     const AudioPick = document.querySelector('#pick-audio');
+    const ErrorPick = document.querySelector('#error-audio');
+
 
     const ItemName = document.querySelector('#item-name');
     const ItemNumber = document.querySelector('#item-number');
@@ -218,6 +220,7 @@ window.onload = function () {
     function dragStart() {
         currTile = this; //this refers to image that was clicked on for dragging
         if (currTile.src.includes("blank")) {
+            ErrorPick.play();
             return;
         }
         ItemName.innerText = currTile.getAttribute("data-name");
@@ -246,14 +249,16 @@ window.onload = function () {
 
     function dragEnd() {
         if (currTile.src.includes("blank")) {
+            ErrorPick.play();
             return;
         }
 
         if (currTile.alt !== otherTile.alt) {
+            ErrorPick.play();
             return;
         }
 
-        data[parseInt(currTile.getAttribute('data-id'))].is_drop = true;
+        data[parseInt(currTile.getAttribute('data-id'))].is_drop = currTile.parentNode.getAttribute('id') === 'board';
 
         let currImg = currTile.src;
         let otherImg = otherTile.src;
