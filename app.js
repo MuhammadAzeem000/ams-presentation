@@ -1,117 +1,247 @@
-const data = [
+const HammerData = [
     {
-        name: "Top Sub",
-        number: 'WQ55B0101',
-        weight: '18.5',
-        src: '01',
-        is_drop: false,
+        id: 'WQ55B',
+        tab_name: 'WQ55B DTH HAMMER',
+        imageSrc: 'tab_01',
+        name: 'WQ55B Valveless DTH Hammer - QL50',
+        final_imgSrc: 'WQ55B-Valveless-DTH-Hammer-QL50',
+        data: [
+            {
+                name: "Top Sub",
+                number: 'WQ55B0101',
+                weight: '18.5',
+                src: '01',
+                is_drop: false,
+            },
+            {
+                name: "Top Sub Outer O/Ring",
+                number: 'F55B0201',
+                weight: '0.01',
+                src: '02',
+                is_drop: false,
+            },
+            {
+                name: "Top Sub Inner O/Ring",
+                number: 'F45B0901',
+                weight: '0.01',
+                src: '03',
+                is_drop: false,
+            },
+            {
+                name: "Quad Ring",
+                number: 'WQ55B0401',
+                weight: '0.01',
+                src: '04',
+                is_drop: false,
+            },
+            {
+                name: "Check Valve",
+                number: 'WQ55B0502',
+                weight: '0.3',
+                src: '05',
+                is_drop: false,
+            },
+            {
+                name: "Check Valve Spring",
+                number: 'WQ55B0702',
+                weight: '0.02',
+                src: '06',
+                is_drop: false,
+            },
+            {
+                name: "Check Valve Holder",
+                number: 'WQ55B0602',
+                weight: '0.4',
+                src: '07',
+                is_drop: false,
+            },
+            {
+                name: "Dowel Pin",
+                number: 'WQ55B0801',
+                weight: '0.12',
+                src: '08',
+                is_drop: false,
+            },
+            {
+                name: "Central Control Tube",
+                number: 'WQ55B1002',
+                weight: '0.8',
+                src: '09',
+                is_drop: false,
+            },
+            {
+                name: "Air Plug",
+                number: 'WQ55B1201',
+                weight: '0.01',
+                src: '10',
+                is_drop: false,
+            },
+            {
+                name: "Piston",
+                number: 'WQ55B1402',
+                weight: '15.7',
+                src: '11',
+                is_drop: false,
+            },
+            {
+                name: "Outer Cylinder",
+                number: 'WQ55B0302',
+                weight: '24.7',
+                src: '12',
+                is_drop: false,
+            },
+            {
+                name: "Guide Sleeve",
+                number: 'WQ55B1702',
+                weight: '3.1',
+                src: '13',
+                is_drop: false,
+            },
+            {
+                name: "Retaining Ring",
+                number: 'WQ55B1904',
+                weight: '0.3',
+                src: '14',
+                is_drop: false,
+            },
+            {
+                name: "Drive Sub",
+                number: 'WQ55B2003',
+                weight: '5.3',
+                src: '15',
+                is_drop: false,
+            },
+            {
+                name: "Drill Bit",
+                number: 'QL50 Bit',
+                weight: '/',
+                src: '16',
+                is_drop: false,
+            },
+        ]
     },
     {
-        name: "Top Sub Outer O/Ring",
-        number: 'F55B0201',
-        weight: '0.01',
-        src: '02',
-        is_drop: false,
-    },
-    {
-        name: "Top Sub Inner O/Ring",
-        number: 'F45B0901',
-        weight: '0.01',
-        src: '03',
-        is_drop: false,
-    },
-    {
-        name: "Quad Ring",
-        number: 'WQ55B0401',
-        weight: '0.01',
-        src: '04',
-        is_drop: false,
-    },
-    {
-        name: "Check Valve",
-        number: 'WQ55B0502',
-        weight: '0.3',
-        src: '05',
-        is_drop: false,
-    },
-    {
-        name: "Check Valve Spring",
-        number: 'WQ55B0702',
-        weight: '0.02',
-        src: '06',
-        is_drop: false,
-    },
-    {
-        name: "Check Valve Holder",
-        number: 'WQ55B0602',
-        weight: '0.4',
-        src: '07',
-        is_drop: false,
-    },
-    {
-        name: "Dowel Pin",
-        number: 'WQ55B0801',
-        weight: '0.12',
-        src: '08',
-        is_drop: false,
-    },
-    {
-        name: "Central Control Tube",
-        number: 'WQ55B1002',
-        weight: '0.8',
-        src: '09',
-        is_drop: false,
-    },
-    {
-        name: "Air Plug",
-        number: 'WQ55B1201',
-        weight: '0.01',
-        src: '10',
-        is_drop: false,
-    },
-    {
-        name: "Piston",
-        number: 'WQ55B1402',
-        weight: '15.7',
-        src: '11',
-        is_drop: false,
-    },
-    {
-        name: "Outer Cylinder",
-        number: 'WQ55B0302',
-        weight: '24.7',
-        src: '12',
-        is_drop: false,
-    },
-    {
-        name: "Guide Sleeve",
-        number: 'WQ55B1702',
-        weight: '3.1',
-        src: '13',
-        is_drop: false,
-    },
-    {
-        name: "Retaining Ring",
-        number: 'WQ55B1904',
-        weight: '0.3',
-        src: '14',
-        is_drop: false,
-    },
-    {
-        name: "Drive Sub",
-        number: 'WQ55B2003',
-        weight: '5.3',
-        src: '15',
-        is_drop: false,
-    },
-    {
-        name: "Drill Bit",
-        number: 'QL50 Bit',
-        weight: '/',
-        src: '16',
-        is_drop: false,
-    },
-];
+        id: 'WQ65BK',
+        tab_name: 'WQ65BK DTH HAMMER',
+        name: 'WQ65BK Single cylinder DTH Hammer – QL60',
+        imageSrc: 'tab_02',
+        final_imgSrc: 'WQ55B-Valveless-DTH-Hammer-QL50',
+        data: [
+            {
+                name: "Top Sub",
+                number: 'WQ65BK0101',
+                weight: '25.2',
+                src: '01',
+                is_drop: false,
+            },
+            {
+                name: "TS O/Ring",
+                number: 'WQ65BK0201',
+                weight: '0.01',
+                src: '02',
+                is_drop: false,
+            },
+            {
+                name: "TS O/Ring",
+                number: 'WQ65BK0901',
+                weight: '0.01',
+                src: '03',
+                is_drop: false,
+            },
+            {
+                name: "Quad Ring",
+                number: 'WQ65BK0401',
+                weight: '0.01',
+                src: '04',
+                is_drop: false,
+            },
+            {
+                name: "Check Valve",
+                number: 'WQ65BK0501',
+                weight: '0.5',
+                src: '05',
+                is_drop: false,
+            },
+            {
+                name: "Check Valve Spring",
+                number: 'WQ65BK0701',
+                weight: '0.06',
+                src: '06',
+                is_drop: false,
+            },
+            {
+                name: "Check Valve Holder",
+                number: 'WQ65BK0601',
+                weight: '0.5',
+                src: '07',
+                is_drop: false,
+            },
+            {
+                name: "Dowel Pin",
+                number: 'WQ65BK0801',
+                weight: '0.2',
+                src: '08',
+                is_drop: false,
+            },
+            {
+                name: "Central Control Tube",
+                number: 'WQ65BK1001',
+                weight: '1.2',
+                src: '09',
+                is_drop: false,
+            },
+            {
+                name: "Air Plug",
+                number: 'WQ65BK1201',
+                weight: '0.01',
+                src: '10',
+                is_drop: false,
+            },
+            {
+                name: "Piston",
+                number: 'WQ65BK1401',
+                weight: '21.5',
+                src: '11',
+                is_drop: false,
+            },
+            {
+                name: "Outer Cylinder",
+                number: 'WQ65BK0301',
+                weight: '34.8',
+                src: '12',
+                is_drop: false,
+            },
+            {
+                name: "Guide Sleeve",
+                number: 'WQ65BK1703',
+                weight: '4.7',
+                src: '13',
+                is_drop: false,
+            },
+            {
+                name: "Retaining Ring",
+                number: 'WQ65BK1903',
+                weight: '0.6',
+                src: '14',
+                is_drop: false,
+            },
+            {
+                name: "Drive Sub",
+                number: 'WQ65BK2001',
+                weight: '6.3',
+                src: '15',
+                is_drop: false,
+            },
+            {
+                name: "Drill Bit",
+                number: 'QL60 Shank Bit',
+                weight: '/',
+                src: '16',
+                is_drop: false,
+            },
+        ]
+    }
+]
 
 // More info about initialization & config:
 // - https://revealjs.com/initialization/
@@ -119,7 +249,6 @@ const data = [
 
 window.onload = function () {
     const StartButton = document.querySelector("#StartBtn");
-    const TabButtons = document.querySelectorAll(".Tab_Btn");
 
     const AudioDrop = document.querySelector('#drop-audio');
     const AudioPick = document.querySelector('#pick-audio');
@@ -131,12 +260,11 @@ window.onload = function () {
     const ItemWeight = document.querySelector('#item-weight');
     const ItemImg = document.querySelector('#item-img');
 
-    ItemName.innerText = data[0].name;
-    ItemNumber.innerText = data[0].number;
-    ItemWeight.innerText = data[0].weight;
+    const HammerHeader = document.querySelectorAll('.hammer-full-name');
+    const HammerFullImg = document.querySelector('#hammer-full-img');
 
-    let reveal, currTile, otherTile;
-    
+    let reveal, currTile, otherTile, currData;
+
     reveal = new Reveal(document.querySelector('.reveal'), {
         controls: false,
         progress: false,
@@ -165,65 +293,98 @@ window.onload = function () {
         reveal.next();
     });
 
-    TabButtons.forEach((TabButton) => {
-        addListenerMulti(TabButton, 'click touchstart', function (e) {
+    HammerData.forEach(hammer => {
+        const hammerTab = document.createElement("div");
+        hammerTab.classList.add("col-md-6", "col-12");
+
+        const hammerImage = document.createElement("img");
+        hammerImage.src = `./src/${hammer.imageSrc}.png`; // Assuming each hammer object has an imageSrc property
+        hammerImage.classList.add("mb-2", "Tab_Btn");
+        hammerImage.alt = hammer.imageSrc;
+        hammerImage.style.width = "100%";
+        hammerImage.style.height = "100%";
+
+        const hammerName = document.createElement("p");
+        hammerName.classList.add("text-warning");
+        hammerName.textContent = hammer.tab_name; // Assuming each hammer object has a name property
+
+        addListenerMulti(hammerTab, 'click touchstart', function (e) {
+            currData = hammer.data;
+            const data = hammer.data;
+
+            ItemName.innerText = data[0].name;
+            ItemNumber.innerText = data[0].number;
+            ItemWeight.innerText = data[0].weight;
+            ItemImg.src = `./src/board-img/img-${data[0].src}.png`;
+
+            HammerHeader.forEach(header => {
+                header.innerText = hammer.name
+            })
+
+            HammerFullImg.src = `./src/${hammer.final_imgSrc}.png`
+
+            for (let r = 0; r < data.length; r++) {
+                //<img>
+                let tile = document.createElement("img");
+                tile.className = "tile";
+                tile.src = `./src/board-img/img-${data[r].src}.png`;
+                tile.alt = `img-${data[r].src}`;
+
+                tile.setAttribute("data-id", r);
+                tile.setAttribute("data-name", data[r].name);
+                tile.setAttribute("data-number", data[r].number);
+                tile.setAttribute("data-weight", data[r].weight);
+
+                //DRAG FUNCTIONALITY
+                tile.addEventListener("dragstart", dragStart); //click on image to drag
+                tile.addEventListener("dragover", dragOver);   //drag an image
+                tile.addEventListener("dragenter", dragEnter); //dragging an image into another one
+                tile.addEventListener("dragleave", dragLeave); //dragging an image away from another one
+                tile.addEventListener("drop", dragDrop);       //drop an image onto another one
+                tile.addEventListener("dragend", dragEnd);      //after you completed dragDrop
+
+                tile.addEventListener("touchstart", dragStart);
+                tile.addEventListener("touchmove", touchMove);
+                tile.addEventListener("touchend", dragEnd);
+
+                document.getElementById("board").append(tile);
+            }
+
+            for (let r = 0; r < data.length; r++) {
+                //<img>
+                let tile = document.createElement("img");
+                tile.src = `./src/blank-img/img-${data[r].src}.png`;
+                tile.alt = `img-${data[r].src}`;
+
+                tile.setAttribute("data-id", r);
+                tile.setAttribute("data-name", data[r].name);
+                tile.setAttribute("data-number", data[r].number);
+                tile.setAttribute("data-weight", data[r].weight);
+
+                //DRAG FUNCTIONALITY
+                tile.addEventListener("dragstart", dragStart); //click on image to drag
+                tile.addEventListener("dragover", dragOver);   //drag an image
+                tile.addEventListener("dragenter", dragEnter); //dragging an image into another one
+                tile.addEventListener("dragleave", dragLeave); //dragging an image away from another one
+                tile.addEventListener("drop", dragDrop);       //drop an image onto another one
+                tile.addEventListener("dragend", dragEnd);      //after you completed dragDrop
+
+                tile.addEventListener("touchstart", dragStart);
+                tile.addEventListener("touchmove", touchMove);
+                tile.addEventListener("touchend", dragEnd);
+
+                document.getElementById("pieces").append(tile);
+            }
+
             reveal.next();
         });
+
+        hammerTab.appendChild(hammerImage);
+        hammerTab.appendChild(hammerName);
+
+        document.getElementById("hammer_tabs").appendChild(hammerTab);
     });
 
-    for (let r = 0; r < data.length; r++) {
-        //<img>
-        let tile = document.createElement("img");
-        tile.className = "tile";
-        tile.src = `./src/board-img/img-${data[r].src}.png`;
-        tile.alt = `img-${data[r].src}`;
-
-        tile.setAttribute("data-id", r);
-        tile.setAttribute("data-name", data[r].name);
-        tile.setAttribute("data-number", data[r].number);
-        tile.setAttribute("data-weight", data[r].weight);
-
-        //DRAG FUNCTIONALITY
-        tile.addEventListener("dragstart", dragStart); //click on image to drag
-        tile.addEventListener("dragover", dragOver);   //drag an image
-        tile.addEventListener("dragenter", dragEnter); //dragging an image into another one
-        tile.addEventListener("dragleave", dragLeave); //dragging an image away from another one
-        tile.addEventListener("drop", dragDrop);       //drop an image onto another one
-        tile.addEventListener("dragend", dragEnd);      //after you completed dragDrop
-
-        tile.addEventListener("touchstart", dragStart);
-        tile.addEventListener("touchmove", touchMove);
-        tile.addEventListener("touchend", dragEnd);
-
-        document.getElementById("board").append(tile);
-    }
-
-    for (let r = 0; r < data.length; r++) {
-        //<img>
-        let tile = document.createElement("img");
-        tile.src = `./src/blank-img/img-${data[r].src}.png`;
-        tile.alt = `img-${data[r].src}`;
-
-        tile.setAttribute("data-id", r);
-        tile.setAttribute("data-name", data[r].name);
-        tile.setAttribute("data-number", data[r].number);
-        tile.setAttribute("data-weight", data[r].weight);
-
-        //DRAG FUNCTIONALITY
-        tile.addEventListener("dragstart", dragStart); //click on image to drag
-        tile.addEventListener("dragover", dragOver);   //drag an image
-        tile.addEventListener("dragenter", dragEnter); //dragging an image into another one
-        tile.addEventListener("dragleave", dragLeave); //dragging an image away from another one
-        tile.addEventListener("drop", dragDrop);       //drop an image onto another one
-        tile.addEventListener("dragend", dragEnd);      //after you completed dragDrop
-
-        tile.addEventListener("touchstart", dragStart);
-        tile.addEventListener("touchmove", touchMove);
-        tile.addEventListener("touchend", dragEnd);
-
-        document.getElementById("pieces").append(tile);
-    }
-    
     function touchMove(event) {
         // Prevent default touch behavior to avoid interference
         event.preventDefault();
@@ -284,7 +445,7 @@ window.onload = function () {
             return;
         }
 
-        data[parseInt(currTile.getAttribute('data-id'))].is_drop = currTile.parentNode.getAttribute('id') === 'board';
+        currData[parseInt(currTile.getAttribute('data-id'))].is_drop = currTile.parentNode.getAttribute('id') === 'board';
 
         let currImg = currTile.src;
         let otherImg = otherTile.src;
@@ -292,7 +453,7 @@ window.onload = function () {
         otherTile.src = currImg;
         AudioDrop.play();
 
-        if(data.every(o => o.is_drop === true)) {
+        if (currData.every(o => o.is_drop === true)) {
             reveal.next();
         }
     }
