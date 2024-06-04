@@ -15,14 +15,14 @@ const HammerData = [
             },
             {
                 name: "Top Sub Outer O/Ring",
-                number: 'F55B0201',
+                number: 'WQ55B0201',
                 weight: '0.01',
                 src: '02',
                 is_drop: false,
             },
             {
                 name: "Top Sub Inner O/Ring",
-                number: 'F45B0901',
+                number: 'WQ55B0901',
                 weight: '0.01',
                 src: '03',
                 is_drop: false,
@@ -92,14 +92,14 @@ const HammerData = [
             },
             {
                 name: "Guide Sleeve",
-                number: 'WQ55B1702',
+                number: 'WQ55B0302',
                 weight: '3.1',
                 src: '13',
                 is_drop: false,
             },
             {
                 name: "Retaining Ring",
-                number: 'WQ55B1904',
+                number: 'WQ55B1903',
                 weight: '0.3',
                 src: '14',
                 is_drop: false,
